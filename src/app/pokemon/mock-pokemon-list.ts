@@ -1,6 +1,6 @@
 import { Pokemon } from './pokemon';
-
-export const POKEMONS: Pokemon[] = [
+export const POKEMONS: number = 1;
+/*export const POKEMONS: Pokemon[] = []
     {
         id: 1,
         name: "Bulbizarre",
@@ -109,4 +109,4 @@ export const POKEMONS: Pokemon[] = [
         types: ["Feu"],
         created: new Date()
     }
-];
+];*/

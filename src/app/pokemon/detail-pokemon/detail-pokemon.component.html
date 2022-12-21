@@ -10,16 +10,32 @@
           <table class="bordered striped">
             <tbody>
               <tr>
-                <td>Nom</td>
+                <td>Name</td>
                 <td><strong>{{ pokemon.name }}</strong></td>
               </tr>
               <tr>
-                <td>Points de vie</td>
+                <td>Health points</td>
                 <td><strong>{{ pokemon.hp }}</strong></td>
               </tr>
               <tr>
-                <td>Dégâts</td>
-                <td><strong>{{ pokemon.cp }}</strong></td>
+                <td>Attack</td>
+                <td><strong>{{ pokemon.attack }}</strong></td>
+              </tr>
+              <tr>
+                <td>Defense</td>
+                <td><strong>{{ pokemon.defense }}</strong></td>
+              </tr>
+              <tr>
+                <td>Spe. attack</td>
+                <td><strong>{{ pokemon.speatk }}</strong></td>
+              </tr>
+              <tr>
+                <td>Spe. defense</td>
+                <td><strong>{{ pokemon.spedef }}</strong></td>
+              </tr>
+              <tr>
+                <td>Speed</td>
+                <td><strong>{{ pokemon.speed }}</strong></td>
               </tr>
               <tr>
                 <td>Types</td>
@@ -27,18 +43,14 @@
                   <span *ngFor="let type of pokemon.types" class="{{ type | pokemonTypeColor }}">{{ type }}</span>
                 </td>
               </tr>
-              <tr>
-                <td>Date de création</td>
-                <td><em>{{ pokemon.created | date:"dd/MM/yyyy" }}</em></td>
-              </tr>
             </tbody>
           </table>
         </div>
         <div class="card-action">
-          <a (click)="goBack()">Retour</a>
+          <a (click)="goBack()" class="btn">Back</a>
         </div>
       </div>
     </div>
     </div>
     </div>
-    <h4 *ngIf='!pokemon' class="center">Aucun pokémon avec cet id à afficher !</h4>
+    <h4 *ngIf='!pokemon' class="center">This pokemon id doesn't exist !</h4>

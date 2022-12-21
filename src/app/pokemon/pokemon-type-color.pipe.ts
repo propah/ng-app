@@ -8,38 +8,65 @@ export class PokemonTypeColorPipe implements PipeTransform {
     let color: string;
   
     switch (type) {
-      case 'Feu':
+      case 'Fire':
         color = 'red lighten-1';
         break;
-      case 'Eau':
+      case 'Water':
         color = 'blue lighten-1';
         break;
-      case 'Plante':
+      case 'Grass':
         color = 'green lighten-1';
         break;
-      case 'Insecte':
+      case 'Bug':
         color = 'brown lighten-1';
         break;
       case 'Normal':
         color = 'grey lighten-3';
         break;
-      case 'Vol':
+      case 'Flying':
         color = 'blue lighten-3';
         break;
       case 'Poison':
         color = 'deep-purple accent-1';
         break;
-      case 'Fée':
+      case 'Fairy':
         color = 'pink lighten-4';
         break;
-      case 'Psy':
+      case 'Psychic':
         color = 'deep-purple darken-2';
         break;
-      case 'Electrik':
+      case 'Electric':
         color = 'lime accent-1';
         break;
-      case 'Combat':
+      case 'Fighting':
         color = 'deep-orange';
+        break;
+      case 'Ground':
+        color = 'brown lighten-2';
+        break;
+      case 'Rock':
+        color = 'brown darken-1';
+        break;
+      case 'Steel':
+        color = 'grey darken-1';
+        break;
+      case 'Ice':
+        color = 'light-blue lighten-3';
+        break;
+      case 'Ghost':
+        color = 'indigo darken-1';
+        break;
+      case 'Dragon':
+        color = 'deep-purple darken-4';
+        break;
+      case 'Dark':
+        color = 'brown darken-3';
+        break;
+      case 'Shadow':
+        color = 'grey darken-4';
+        break;
+      case 'Unknown':
+        color = 'grey darken-4';
         break;
       default:
         color = 'grey';

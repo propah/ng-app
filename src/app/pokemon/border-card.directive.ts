@@ -8,7 +8,7 @@ export class BorderCardDirective implements OnInit {
   @Input('appBorderCard') borderColor?: string;
   private initColor: string = 'grey';
   private defaultColor: string = 'green';
-  private defaultHeight: number = 180;
+  private defaultHeight: number = 190;
 
   constructor(private el: ElementRef) { }
 
